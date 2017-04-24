@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Earth Wasser Systems</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+<style>
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border-radius: 0;
+  border: none;
+  background-color: none;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: .5;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: none;
+}
+.carousel-control.left {
+	background-image: none;
+}
+.carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: none;
+}
+
+.carousel-control {
+  padding-top:10.25%;
+  width:5%;
+}
+ul.dropdown-menu a{
+	padding: 10px 25px 10px 25px;
+}
+/*div#back{
+	background-image: url('images/4.png');
+}*/
+div#footer{
+	font-size: 14px;
+	color: #dfdfdf;
+}
+div#footer a{
+	text-decoration: none;
+	list-style: none;
+	color: #dfdfdf;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+</style>
 
 <body style="font-family:  'Open Sans', sans-serif;">
 <nav class="navbar navbar-default" style="margin-bottom: 0px;">
-  <div class="container-fluid">
+  <div class="container">
+  	<div class="row">
+  		<div class="col-md-offset-1 col-md-10">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -18,99 +81,197 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Earth Wasser Systems</a>
+      <a class="navbar-brand" href="index.html">Earth Wasser Systems</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
       <ul class="nav navbar-nav navbar-right">       
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">About</a></li>  
+        <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+	         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
+		        <ul class="dropdown-menu">
+		          <li><a href="#">Company Profile</a></li>
+		          <li><a href="#">Our Journey</a></li>
+		          <li><a href="#">Organisational Motto</a></li>
+		          <li><a href="#">Our Infrastructure &amp; team</a></li>
+		          <li><a href="#">Quality Orientation</a></li>
+		          <li><a href="#">Customized Services</a></li>
+		        </ul>
+	      	</li>        
          <li><a href="#">Products &amp; Services</a></li>    
          <li><a href="#">Contact Us</a></li>    
       </ul>
     </div><!-- /.navbar-collapse -->
+    </div>
+    </div>
   </div><!-- /.container-fluid -->
 </nav>
 
-	<div style="padding: 55px 0px; background-color: #f9f9f9;">
+	<div style="padding: 55px 0px; background-color: #fafafa;">
 	<div class="container">
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-		  <ol class="carousel-indicators">
-		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-		    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-		     <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-		      <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-		  </ol>
-		  <div class="carousel-inner" role="listbox">
-			    <div class="item active">
-			      <img class="d-block img-fluid" src="images/1111.jpg" alt="First slide">
-			    </div>
+		<div class="row">		
+			<div class="col-md-offset-1 col-md-10" id="back">
+			
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+					  <ol class="carousel-indicators">
+					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+					     <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+					      <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+					  </ol>
+					  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img class="d-block img-fluid" src="images/1111.jpg" alt="First slide">
+						    </div>
 
-			    <div class="item">
-			      <img class="d-block img-fluid" src="images/1112.jpg" alt="Second slide">
-			    </div>
+						    <div class="item">
+						      <img class="d-block img-fluid" src="images/1112.jpg" alt="Second slide">
+						    </div>
 
-			    <div class="item">
-			      <img class="d-block img-fluid" src="images/1113.jpg" alt="Third slide">
-			    </div>
+						    <div class="item">
+						      <img class="d-block img-fluid" src="images/1113.jpg" alt="Third slide">
+						    </div>
 
-			     <div class="item">
-			      <img class="d-block img-fluid" src="images/1114.jpg" alt="Fouth slide">
-			    </div>
+						     <div class="item">
+						      <img class="d-block img-fluid" src="images/1114.jpg" alt="Fouth slide">
+						    </div>
 
-			     <div class="item">
-			      <img class="d-block img-fluid" src="images/1115.jpg" alt="Fifth slide">
-			    </div>
+						     <div class="item">
+						      <img class="d-block img-fluid" src="images/1115.jpg" alt="Fifth slide">
+						    </div>
 
-			     <div class="item">
-			      <img class="d-block img-fluid" src="images/1116.jpg" alt="Sixth slide">
-			    </div>
+						     <div class="item">
+						      <img class="d-block img-fluid" src="images/1116.jpg" alt="Sixth slide">
+						    </div>
 
-			     <div class="item">
-			      <img class="d-block img-fluid" src="images/1117.jpg" alt="Seventh slide">
-			    </div>
+						     <div class="item">
+						      <img class="d-block img-fluid" src="images/1117.jpg" alt="Seventh slide">
+						    </div>
 
-			    <div class="item">
-			      <img class="d-block img-fluid" src="images/1118.jpg" alt="Eigth slide">
-			    </div>
+						    <div class="item">
+						      <img class="d-block img-fluid" src="images/1118.jpg" alt="Eigth slide">
+						    </div>
 
-			    <div class="item">
-			      <img class="d-block img-fluid" src="images/1119.jpg" alt="Nineth slide">
-			    </div>
-		  </div>
-		  <a class="left carousel-control" href="#carouselExampleIndicators" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#carouselExampleIndicators" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
+						    <div class="item">
+						      <img class="d-block img-fluid" src="images/1119.jpg" alt="Nineth slide">
+						    </div>
+						  </div>
+					  <a class="left carousel-control" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>					
+					<br> <br>
+
+				<h2 style="font-size: 24px;">Welcome to Earth Wasser Systems Private Limited, Pioneers in water engineering</h2><br>
+				<div class="col-md-9">
+				<br><p>From conceptualization, designing to final installation, we offer comprehensive project execution services like Tubewell Drilling, Rain Water Harvesting, Pile Foundation and Dewatering for our customers. We are also Authorised Distributors of Grundfos Pumps. By offering stature products and consolidated services, we have earned a coveted list of clients to our credit. We are constantly implementing innovative technology in order to improve our services</p>
+				</div>
+				<div class="col-md-3">
+					<img src="images/gd.jpg">
+				</div>
+			</div>
+
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					
+			<br> <br><br> <br>
+			<div class="well">
+            <div id="myCarousel" class="carousel slide">
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6" ><a href="#x" class="thumbnail"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6"><a href="#x col-xs-6" class="thumbnail"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3 col-xs-6"><a href="#x" class="thumbnail"><img src="http://placehold.it/500x500" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                </div>
+                <!--/carousel-inner--> 
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="fa fa-chevron-left fa-4"></i></a>
+
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="fa fa-chevron-right fa-4"></i></a>
+            </div>
+            <!--/myCarousel-->
+        </div>
+        <!--/well-->
+        </div>
 		</div>
 	</div>
 </div>
 
 
-<div style="padding: 55px 0px; background-color: #fefefe;">
+<div style="padding: 55px 0px 0px 0px; background-color: #3e3e3e;" id="footer">
 <div class="container">
-	<div class="row">
-		
-			<h2>Welcome to Earth Wasser Systems Private Limited, Pioneers in water engineering</h2><br>
-			<div class="col-md-8">
-			<br><p>From conceptualization, designing to final installation, we offer comprehensive project execution services like Tubewell Drilling, Rain Water Harvesting, Pile Foundation and Dewatering for our customers. We are also Authorised Distributors of Grundfos Pumps. By offering stature products and consolidated services, we have earned a coveted list of clients to our credit. We are constantly implementing innovative technology in order to improve our services</p>
+	<div class="row">		
+			<div class="col-md-offset-3 col-md-3">
+				<ul style="list-style: none; text-align: center;">
+					<li> <a href="">Get to Know Us</a> </li><br>
+					<li><a href=""> Pay Online Now</a></li>
+				</ul>
 			</div>
-			<div class="col-md-4">
-				<img src="images/gd.jpg">
-			</div>
+			<div class="col-md-3">
+				<ul  style="list-style: none; text-align: center;">
+					<li> <a href=""> News &amp; Events</a></li><br>
+					<li> <a href=""> Send an Enquiry</a> </li>
+				</ul>
+			</div>		
 	</div>
-</div>
-</div>
+	<br>
+	<p style="text-align: center; font-size: 12px; margin-left: 30px;">Copyright &copy; 2017. Earth Wasser Systems (P) Ltd.</p>
+
+	<br>
+	</div>
+	</div>
+
+	
 
 
 
@@ -124,7 +285,19 @@
 <script type="text/javascript">
 	$('.carousel').carousel({
   interval: 4000
-})
+});
+$(document).ready(function() {
+	$('#myCarousel').carousel({
+	interval: 0
+	})
+    
+    $('#myCarousel').on('slid.bs.carousel', function() {
+    	//alert("slid");
+	});    
+    
+});
+
+
 </script>
 </body>
 </html>
